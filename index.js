@@ -1,5 +1,6 @@
 var Promise = require('bluebird'),
-  npm = require('npm');
+  npm = require('npm'),
+  semver = require('semver');
 
 npm.load();
 
@@ -11,7 +12,7 @@ module.exports = function (packages) {
 
     getLatestVersions(packageArray)
       .filter(function (pkg) {
-        return pkg.current.indexOf(pkg.latest) === -1;
+        return !semver.satisfies(pkg.latest, pkg.current);
       })
       .then(function (packages) {
         fulfill(packages);
