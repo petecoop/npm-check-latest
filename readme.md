@@ -15,11 +15,11 @@ check(dependencies)
     // returns array of packages e.g.
     packages = [{
       name: 'express',
-      current: '~4.10.6',
+      current: '~4.9.0',
       latest: '4.10.7'
     }, {
       name: 'glob',
-      current: '~4.3.1',
+      current: '^3.3.1',
       latest: '4.3.2'
     }];
   });
