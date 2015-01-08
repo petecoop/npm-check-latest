@@ -1,0 +1,19 @@
+{
+  "name": "npm-check-latest",
+  "version": "0.0.0",
+  "description": "Check for latest packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petecoop/npm-check-latest.git"
+  },
+  "author": "petecoop <pete@petecoop.co.uk> (http://petecoop.co.uk/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petecoop/npm-check-latest/issues"
+  },
+  "homepage": "https://github.com/petecoop/npm-check-latest"
+}
