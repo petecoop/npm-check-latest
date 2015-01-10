@@ -7,10 +7,10 @@ returns a [bluebird](https://github.com/petkaantonov/bluebird) promise of outdat
 ```javascript
 var check = require('npm-check-latest');
 
-var dependencies = require('./package.json');
+var pkg = require('./package.json');
 
 // pass in 
-check(dependencies)
+check(pkg.dependencies)
   .then(function (packages) {
     // returns array of packages e.g.
     packages = [{
