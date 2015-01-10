@@ -12,7 +12,7 @@ module.exports = function (packages) {
 
     getLatestVersions(packageArray)
       .filter(function (pkg) {
-        if(pkg.current == 'latest') return true;
+        if(pkg.current == 'latest') return false;
         return !semver.satisfies(pkg.latest, pkg.current);
       })
       .then(function (packages) {
